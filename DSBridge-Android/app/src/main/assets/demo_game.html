@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cmn-Hans">
+    <meta charset="UTF-8">
+    <title>Game Demo</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,user-scalable=no"/>
+    <!--require dsbridge init js-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/dsbridge/dist/dsbridge.js"> </script>-->
+    <script src="./dsbridge.js"> </script>
+</head>
+<body>
+
+<script>
+    //注册方法供APP端调用
+    //暂停游戏
+    dsBridge.register('syncPause', function () {
+        //TODO H5Game
+    })
+    //继续游戏
+    dsBridge.register('syncResume', function () {
+        //TODO H5Game
+    })
+    //是否静音
+    /*
+    bool muted = true; //静音
+    */
+    dsBridge.register('setMuted', function (muted) {
+        //TODO H5Game
+    })
+
+    //获取游戏信息
+    /*
+    int lvFrom = 1; //关卡起始
+    int lvTo   = 5; //关卡结束
+    int duration = 0; //剩余时长（不包含倒计时等）
+    */
+    function getGameInfo() {
+        dsBridge.call("getGameInfo", function (v) {
+            alert(JSON.stringify(v))
+        })
+    }
+
+    //获取用户信息
+    /*
+    String name   = ""; //用户昵称
+    String avatar = ""; //用户头像
+    String token  = ""; //用户鉴权
+    */
+    function getUserInfo() {
+        dsBridge.call("getUserInfo", function (v) {
+            alert(JSON.stringify(v))
+        })
+    }
+
+    //获取用户注意力
+    /*
+    int value = 65.0; //专注值
+    */
+    function getUserAttention() {
+        dsBridge.call("getUserAttention", function (value) {
+             //TODO H5Game
+        })
+    }
+
+    //游戏开始通知APP端
+    function onStart() {
+        alert(dsBridge.call("onStart"));
+    }
+
+    //游戏结束通知APP端，游戏数据统计, 根据具体游戏传值，答题类、闯关类、速度类
+    /*
+    int score = 0; //得分
+    int questionCount = 0; //答题数量
+    int correctCount = 0; //答题正确数量
+    int omitNumber = 0; //遗漏个数
+    int avgReactionTime = 0; //平均反应时间(ms)
+    int maxLv = 0; //闯关数量
+    int completeDuration = 0; //实际游戏时长
+    */
+    function onFinish() {
+        alert(dsBridge.call("onFinish", {score: 80.0, correctCount: 100, questionCount: 150, avgReactionTime: 2500, maxLv: 2, completeDuration: 60}));
+    }
+</script>
+</body>
+</html>

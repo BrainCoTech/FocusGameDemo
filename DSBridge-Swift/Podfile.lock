@@ -1,0 +1,24 @@
+PODS:
+  - dsBridge (3.0.6)
+  - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - dsBridge
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - dsBridge
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 97244a255e2a5b65a82bf5d4b6f1fdd534e61409
+
+COCOAPODS: 1.9.3
