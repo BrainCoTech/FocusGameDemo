@@ -5,9 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/DSBridge-Android.iml" filepath="$PROJECT_DIR$/DSBridge-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DSBridge-Android-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DSBridge-Android-app.iml" group="DSBridge-Android/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsbridge/DSBridge-Android-dsbridge.iml" filepath="$PROJECT_DIR$/.idea/modules/dsbridge/DSBridge-Android-dsbridge.iml" group="DSBridge-Android/dsbridge" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FocusGameDemo-DSBridge-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/FocusGameDemo-DSBridge-Android.iml" group="DSBridge-Android" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dsbridge/dsbridge.iml" filepath="$PROJECT_DIR$/dsbridge/dsbridge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project-DSBridge-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/project-DSBridge-Android.iml" group="DSBridge-Android" />
     </modules>
   </component>
 </project>

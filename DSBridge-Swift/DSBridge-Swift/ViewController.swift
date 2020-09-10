@@ -52,8 +52,10 @@ class ViewController: UIViewController {
                 guard let url = Bundle.main.url(forResource: "test", withExtension: "html")?.absoluteString else { return }
                 vc.url = url
             case 1:
-                vc.url = "http://cdn.7tiao.net/zzgame/game1/"
-                vc.url = "http://172.16.215.185:8000/"
+//                vc.url = "http://cdn.7tiao.net/zzgame/game1/"
+//                vc.url = "http://172.16.215.185:8000/"
+                vc.url = "http://hwlgame.online/expressman/index.html"
+                vc.url = "https://app.brainco.cn/camp/webGame/fruit_math/web/index.html"
 //                vc.url = "http://www.baidu.com"
 //                vc.url = "http://127.0.0.1/web-mobile/"
 //                vc.url = "http://172.16.122.103/web-mobile/"

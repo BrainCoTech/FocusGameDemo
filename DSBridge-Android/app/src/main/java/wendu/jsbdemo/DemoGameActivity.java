@@ -18,8 +18,9 @@ public class DemoGameActivity extends AppCompatActivity {
         DWebView.setWebContentsDebuggingEnabled(true);
         dwebView.addJavascriptObject(new JsApi(), null);
 //        dwebView.loadUrl("http://cdn.7tiao.net/zzgame/game1/");
-//        dwebView.loadUrl("http://cdn.7tiao.net/zzgame/game1/index2.php");
-        dwebView.loadUrl("http://hwlgame.online/expressman/index.html");
+        dwebView.loadUrl("http://cdn.7tiao.net/zzgame/game1/index2.php");
+        dwebView.loadUrl("https://app.brainco.cn/camp/webGame/fruit_math/web/index.html");
+//        dwebView.loadUrl("http://hwlgame.online/expressman/index.html");
     }
 
     void showToast(Object o) {

@@ -28,7 +28,7 @@ public class JsApi {
     public void getGameInfo(Object args, CompletionHandler<Object> handler) throws JSONException {
         Integer lvFrom = 10;
         Integer lvTo = 100;
-        Integer duration = 1500;
+        Integer duration = 120;
         JSONObject ret = new JSONObject();
         ret.put("lvFrom", lvFrom);
         ret.put("lvTo", lvTo);
@@ -38,22 +38,23 @@ public class JsApi {
 
     @JavascriptInterface
     public void getUserAttention(Object args, final CompletionHandler<Double> handler) {
-        handler.setProgressData(100.0);
-//        new CountDownTimer(360000, 1000) {
-//            int i = 10;
-//            @Override
-//            public void onTick(long millisUntilFinished) {
-//                //setProgressData can be called many times util complete be called.
-//                handler.setProgressData(1+Math.random()*(100-1+1));
-//
-//            }
-//            @Override
-//            public void onFinish() {
-//                //complete the js invocation with data; handler will be invalid when complete is called
-//                handler.complete(0.0);
-//
-//            }
-//        }.start();
+//        handler.setProgressData(1+Math.random()*(100-1+1));
+//        handler.setProgressData(100.0);
+        new CountDownTimer(360000, 1000) {
+            int i = 10;
+            @Override
+            public void onTick(long millisUntilFinished) {
+                //setProgressData can be called many times util complete be called.
+                handler.setProgressData(1+Math.random()*(100-1+1));
+
+            }
+            @Override
+            public void onFinish() {
+                //complete the js invocation with data; handler will be invalid when complete is called
+                handler.complete(0.0);
+
+            }
+        }.start();
     }
 
     @JavascriptInterface

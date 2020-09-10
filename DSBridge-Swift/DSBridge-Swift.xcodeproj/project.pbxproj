@@ -15,7 +15,6 @@
 		56D89EAE24C068A9004BFB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D89EAC24C068A9004BFB36 /* LaunchScreen.storyboard */; };
 		56D89EB724C06B39004BFB36 /* H5GameAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D89EB524C06B39004BFB36 /* H5GameAPI.swift */; };
 		56D89EB824C06B39004BFB36 /* H5GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D89EB624C06B39004BFB36 /* H5GameVC.swift */; };
-		56D89EBA24C074F0004BFB36 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 56D89EB924C074F0004BFB36 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		56D89EAF24C068A9004BFB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D89EB524C06B39004BFB36 /* H5GameAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H5GameAPI.swift; sourceTree = "<group>"; };
 		56D89EB624C06B39004BFB36 /* H5GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H5GameVC.swift; sourceTree = "<group>"; };
-		56D89EB924C074F0004BFB36 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = "../../DSBridge-IOS/dsbridgedemo/test.html"; sourceTree = "<group>"; };
 		75B05639F5EC05EF57E2FCFD /* Pods_DSBridge_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSBridge_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFFEE58081BFC4CA08CFDE3 /* Pods-DSBridge-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSBridge-Swift.release.xcconfig"; path = "Target Support Files/Pods-DSBridge-Swift/Pods-DSBridge-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +82,6 @@
 		56D89EA024C068A7004BFB36 /* DSBridge-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				56D89EB924C074F0004BFB36 /* test.html */,
 				56D89EB524C06B39004BFB36 /* H5GameAPI.swift */,
 				56D89EB624C06B39004BFB36 /* H5GameVC.swift */,
 				56D89EA124C068A7004BFB36 /* AppDelegate.swift */,
@@ -157,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D89EBA24C074F0004BFB36 /* test.html in Resources */,
 				56D89EAE24C068A9004BFB36 /* LaunchScreen.storyboard in Resources */,
 				56D89EAB24C068A9004BFB36 /* Assets.xcassets in Resources */,
 				56D89EA924C068A7004BFB36 /* Main.storyboard in Resources */,

@@ -72,9 +72,10 @@ class H5GameAPI: NSObject {
     }
     
     func getGameInfo(_ arg: [String: Any], _ completion: ([String: Any]) -> Void) {
-        let lv = 2
-        let duration = 180
-        let params = ["lv": lv, "duration": duration]
+        let lvFrom = 5
+        let lvTo = 5
+        let duration = 30
+        let params = ["lvFrom": lvFrom, "lvTo": lvTo, "duration": duration]
         completion(params)
     }
     
